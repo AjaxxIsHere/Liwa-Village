@@ -1,8 +1,8 @@
 /* Link indicator styles - IMPORTANT: fixed positioning */
 .click-indicator {
     position: fixed !important;
-    background: #f4efe7;
-    color: black;
+    background: #E3000F;
+    color: white;
     z-index: 9999 !important;
     pointer-events: none;
     opacity: 0;
@@ -11,7 +11,7 @@
     top: -20%;
     left: -20%;
     transform: translateZ(0);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(227, 0, 15, 0.3);
 }
 
 .click-indicator.visible {

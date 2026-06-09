@@ -74,12 +74,12 @@ const StickyCols = () => {
     });
 
     return (
-        <section className="sticky-cols w-screen h-dvh overflow-hidden bg-[#181717] lg:mb-20">
+        <section className="sticky-cols w-screen h-dvh overflow-hidden bg-white lg:mb-20">
             <div className="sticky-cols-wrapper relative w-full h-screen">
                 <div className="col col-1">
                     <div className="col-content">
                         <div className="col-content-wrapper">
-                            <h1 className="text-2xl text-[#b1a696] font-bold leading-auto">Enjoy the view
+                            <h1 className="text-2xl text-[#4D4D4D] font-bold leading-auto">Enjoy the view
                                 <br />
                                 through—the wide
                                 <br />
@@ -89,8 +89,8 @@ const StickyCols = () => {
                             </h1>
                             <div className="col-content-para flex items-center gap-4 justify-between">
                                 <div className="flex items-center gap-0 justify-center">
-                                    <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">1</h3>
-                                    <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
+                                    <h3 className="border-1 px-3 py-1 rounded-full text-[#4D4D4D]">1</h3>
+                                    <h3 className="border-1 px-3 py-1 rounded-full text-[#E0E0E0]">3</h3>
                                 </div>
                                 <p className={`text-[12px] font-medium  ${!reveal ? "mr-6" : "mr-0"}`}> Get closer to the desert nature than ever before
                                     <br />
@@ -125,8 +125,8 @@ const StickyCols = () => {
                         </h1>
                         <div className={`col-content-para flex items-center gap-4 justify-between ${reveal ? "ml-0" : "ml-6"}`}>
                             <div className="flex items-center gap-0 justify-center">
-                                <h3 className="border-1 px-3 py-1 rounded-full text-[#aaa091]">{(reveal) ? "3" : "2"}</h3>
-                                <h3 className="border-1 px-3 py-1 rounded-full text-[#524e4b]">3</h3>
+                                <h3 className="border-1 px-3 py-1 rounded-full text-[#4D4D4D]">{(reveal) ? "3" : "2"}</h3>
+                                <h3 className="border-1 px-3 py-1 rounded-full text-[#E0E0E0]">3</h3>
                             </div>
                             <p className="text-[12px] font-medium"> Get closer to the desert nature than ever before
                                 <br />

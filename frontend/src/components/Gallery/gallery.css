@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #2b2825;
+    background-color: #F5F5F5;
     transition: background-color 0.3s ease;
 }
 
@@ -51,7 +51,7 @@
     font-size: 10rem;
     width: 50rem;
     position: absolute;
-    color: #f4efe7;
+    color: #000000;
     font-weight: 600;
     left: 100%;
     animation: gallery-animate var(--time) linear infinite;

@@ -1,6 +1,7 @@
 import gsap from "gsap/all";
-import smoke from "../../assets/smoke_final.mp4";
 import mobileHeroBg from "../../assets/hero-mobile.png"
+import heroBg from "../../assets/Liwa-Village-Recap-v2_1.webm"
+import liwaLogo from "../../assets/liwalogo.png"
 import { useGSAP } from "@gsap/react";
 import { useMediaQuery } from "react-responsive";
 
@@ -33,8 +34,15 @@ const Hero = () => {
         <section className="hero-section w-dvw md:h-dvh h-[100vh] md:p-2 p-2.5 mb-20">
             <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden">
                 <div className="responsive-mobile">
-                    {/* Background image (down layer) */}
-                    <div className="hero-img absolute inset-0 bg-[url('./assets/cap1.png')] bg-no-repeat bg-cover bg-center z-0 md:block hidden" />
+                    {/* Hero background video */}
+                    <video
+                        src={heroBg}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="hero-img absolute inset-0 w-full h-full object-cover z-0 md:block hidden"
+                    ></video>
 
                     {/* Mobile image fallback */}
                     <div className="block lg:hidden mt-6 mb-6">
@@ -44,42 +52,48 @@ const Hero = () => {
                             className="w-full rounded-[2rem] object-cover shadow-[0_-25px_45px_-10px_rgba(255,0,0,0.15)]"
                         />
                     </div>
-
-                    {/* Smoke video (upper layer) */}
-                    <video
-                        src={smoke}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="absolute inset-0 md:w-full md:h-full object-cover z-10 pointer-events-none object-center opacity-50 mix-blend-hard-light md:top-0 top-[5%] h-[90%]  rounded-[2rem] md:px-0"
-                    ></video>
                 </div>
                 <div className="p-4 flex flex-col md:justify-center">
                     <div className="relative h-dvh">
-                        <h1
-                            className="text-[#f4efe7] text-start text-6xl md:text-9xl font-bold tracking-wider lg:absolute  lg:left-2"
-                            style={{ textShadow: '2px 2px 4px #aaa' }}
-                        >
-                            Capsules®
-                        </h1>
+                        <img
+                            src={liwaLogo}
+                            alt="Liwa Village"
+                            className="lg:absolute lg:left-2 w-48 md:w-72 h-auto"
+                        />
 
-                        <div className="w-full h-auto absolute  top-24 md:bottom-[8%] lg:bottom-[9%] flex md:flex-row flex-col md:justify-between md:items-end">
-                            <h2
-                                className="text-start lg:mt-0 md:text-[#f4efe7] text-[#b1a696] text-2xl font-bold md:tracking-wider leading-5 flex flex-col gap-1"
+                        {/* ── Main Hero Content ── */}
+                        <div className="absolute left-0 right-0 bottom-[6%] px-0 md:px-2">
+                            {/* Title */}
+                            <h1
+                                className="text-[#f4efe7] text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-3"
                                 style={{ textShadow: '2px 2px 4px #000' }}
                             >
-                                <span>Closer to</span>
-                                <span>Nature—Closer</span>
-                                <span>to Yourself</span>
-                            </h2>
+                                The Desert&apos;s<br className="md:hidden" /> Grand Stage
+                            </h1>
 
-                            <p
-                                className="md:w-[20%] w-[80%] text-[#f4efe7] text-[0.7rem] font-bold  md:font-medium tracking-wide lg:text-end mt-2 text-justify"
-                                style={{ textShadow: '2px 2px 4px #000' }}
-                            >
-                                Spend unforgettable and remarkable time in the Californian desert with—Capsules.
+                            {/* Subtitle */}
+                            <p className="text-[#b1a696] text-sm md:text-xl lg:text-2xl font-medium tracking-wide max-w-3xl mb-3 leading-snug">
+                                The ultimate winter destination where the spirit of heritage meets the joy of celebration
                             </p>
+
+                            {/* Date */}
+                            <p className="text-[#eae5dd] text-xs md:text-sm tracking-[0.2em] uppercase mb-8 font-semibold">
+                                12 December 2026 &mdash; 3 January 2027
+                            </p>
+
+                            {/* CTA Buttons */}
+                            <div className="flex flex-wrap gap-4">
+                                <button
+                                    className="group relative overflow-hidden border border-white/40 text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-xs md:text-sm uppercase tracking-[0.15em] font-semibold transition-all duration-500 hover:border-[#E3000F] hover:shadow-[0_0_30px_rgba(227,0,15,0.3)]"
+                                >
+                                    <span className="relative z-10">Discover more</span>
+                                </button>
+                                <button
+                                    className="group relative overflow-hidden bg-[#E3000F] text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-xs md:text-sm uppercase tracking-[0.15em] font-semibold transition-all duration-500 hover:bg-[#B8000C] hover:shadow-[0_0_40px_rgba(227,0,15,0.4)]"
+                                >
+                                    <span className="relative z-10">Book your tickets</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

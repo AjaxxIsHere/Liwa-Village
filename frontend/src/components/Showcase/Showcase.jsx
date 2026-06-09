@@ -88,7 +88,7 @@ const Showcase = () => {
                         <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">01</p>
-                            <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
+                            <p className="text-white/50 border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ const Showcase = () => {
                         <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">02</p>
-                            <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
+                            <p className="text-white/50 border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ const Showcase = () => {
                         <p className="text-[0.68rem] font-bold text-[#f4efe7]">Explore the terrain on a guided buggy tour that takes<br />you through the desert’s vast and open landscapes.t</p>
                         <div className="flex justify-center items-center">
                             <p className="text-[#f4efe7] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
-                            <p className="text-[#4e484e] border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
+                            <p className="text-white/50 border-[1px] rounded-3xl px-[1vw] py-1 text-center text-[0.7rem]">03</p>
                         </div>
                     </div>
                 </div>

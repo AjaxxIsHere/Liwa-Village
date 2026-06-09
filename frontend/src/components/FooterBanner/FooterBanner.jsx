@@ -41,7 +41,7 @@ const FooterBanner = () => {
                     onMouseLeave={() => setActive(false)}
                     ref={fbImgRef} src={banner} alt="" className='w-full h-full object-cover' />
 
-                <h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10vw] font-bold text-[#f4efe7]'>Capsules<sub className='text-[5vw]'>®</sub></h1>
+                <h1 className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10vw] font-bold text-[#f4efe7]'>Liwa Village<sub className='text-[5vw]'></sub></h1>
                 <div className='absolute bottom-5 px-4 w-full'>
                     <div className="w-full h-auto flex md:flex-row flex-col md:justify-between md:items-end">
                         <h2
@@ -57,7 +57,7 @@ const FooterBanner = () => {
                             className="md:w-[20%] w-[80%] text-[#f4efe7] text-[0.7rem] font-bold  md:font-medium tracking-wide lg:text-end mt-2 text-justify"
                             style={{ textShadow: '2px 2px 4px #000' }}
                         >
-                            Spend unforgettable and remarkable time in the Californian desert with—Capsules.
+                            Spend unforgettable and remarkable time in the desert with—Liwa Village.
                         </p>
                     </div>
                 </div>

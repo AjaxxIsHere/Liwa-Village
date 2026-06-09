@@ -34,7 +34,7 @@
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
-    mix-blend-mode: difference;
+    mix-blend-mode: normal;
     z-index: 2;
 }
 
