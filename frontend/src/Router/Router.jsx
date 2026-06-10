@@ -5,12 +5,12 @@ import Home from "../pages/Home/Home";
 
 const router = createBrowserRouter([
     {
-        path: "/capsule", // GitHub Pages repo name
-        element: <MainLayout />, // Layout wrapper
+        path: "/",
+        element: <MainLayout />,
         children: [
-            { path: "", element: <Home /> }, // default page
+            { path: "", element: <Home /> },
         ],
     },
-]);
+], { basename: "/capsule" });
 
 export default router;
